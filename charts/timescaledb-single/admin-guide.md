@@ -89,6 +89,7 @@ The following table lists the configurable parameters of the TimescaleDB Helm ch
 | `secretNames.pgbackrest`          | Existing secret that contains env vars that influence pgBackRest (e.g. PGBACKREST_REPO1_S3_KEY_SECRET) | `RELEASE-pgbackgrest` |
 | `serviceAccount.create`           | If true, create a new service account       | `true`                                              |
 | `serviceAccount.name`             | Service account to be used. If not set and `serviceAccount.create` is `true`, a name is generated using the fullname template | `nil` |
+| `serviceAccount.annotations`    | Annotations for Service Account`    | `{}`                                                |
 | `sharedMemory.useMount`           | Mount `/dev/shm` as a Memory disk           | `false`                                             |
 | `timescaledbTune.enabled`         | If true, runs `timescaledb-tune` before starting PostgreSQL | `true`                              |
 | `tolerations`                     | List of node taints to tolerate             | `[]`                                                |
